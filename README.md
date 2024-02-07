@@ -1,11 +1,12 @@
-# BMI160-Arduino
+# BMI160-Shuttleboard-Arduino
 
-This driver is for BMI160 6DoF sensor breakout boards which are connected through the Arduino SPI.
-Derived from the Intel's CurieIMU driver for the Arduino/Genuino 101.
+This driver is for BMI160, BMM150 9DoF sensor breakout boards which are connected through the Arduino SPI.
+Derived from the Intel's CurieIMU driver for the Arduino/Genuino 101 and the original BMI160 library for Arduino.
 
 Intel's driver repository: https://github.com/01org/corelibs-arduino101/tree/master/libraries/CurieIMU
+GitHub user hanzayou's BMI160 6DoF board Arduino driver: https://github.com/hanyazou/BMI160-Arduino
 
-BMI160: https://www.bosch-sensortec.com/bst/products/all_products/bmi160
+BMI160 Shuttleboard: [https://www.bosch-sensortec.com/bst/products/all_products/bmi160](https://www.bosch-sensortec.com/media/boschsensortec/downloads/shuttle_board_flyer/bst-dhw-fl022.pdf)
 
 ## How to install
 Copy all files of this project to the your Arduino IDE library folder.
@@ -14,12 +15,6 @@ Example:
 ```
 cp ~/github/BMI160-Arduino ~/Documents/Arduino/libraries/
 ```
-
-## Get sensor board
-You can find cheap breakout boards ($2~3 USD) on the eBay.
-Pin names may vary by board vendors. I have two variations of BMI160 breakout board.
-![Screenshot](files/wiring3.png)
-
 ## Wiring
 
 ### SPI mode
@@ -69,9 +64,9 @@ void loop() {
 
 Board           |MCU         |tested works|doesn't work|not tested| Notes
 ----------------|------------|------------|------------|----------|-----
-Arduino UNO     |ATmega328P  | X          |            |          |
-Arduino 101     |Intel Curie | X          |            |          |
-Arduino Leonardo|ATmega32u4  | X          |            |          | D7 pin for INT
-Arduino M0 PRO  |ATSAMD21G   | X          |            |          | D7 pin for INT
+Arduino UNO     |ATmega328P  | X         |            |          |
+Arduino 101     |Intel Curie |           |            | x        |
+Arduino Leonardo|ATmega32u4  |           |            | x        | D7 pin for INT
+Arduino M0 PRO  |ATSAMD21G   |           |            | x        | D7 pin for INT
 
 Other boards which have the same MCU might be work well.
