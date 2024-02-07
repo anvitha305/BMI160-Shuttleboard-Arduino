@@ -6,7 +6,7 @@ Derived from the Intel's CurieIMU driver for the Arduino/Genuino 101 and the ori
 Intel's driver repository: https://github.com/01org/corelibs-arduino101/tree/master/libraries/CurieIMU
 GitHub user hanzayou's BMI160 6DoF board Arduino driver: https://github.com/hanyazou/BMI160-Arduino
 
-BMI160 Shuttleboard: [https://www.bosch-sensortec.com/bst/products/all_products/bmi160](https://www.bosch-sensortec.com/media/boschsensortec/downloads/shuttle_board_flyer/bst-dhw-fl022.pdf)
+BMI160 Shuttleboard: https://www.bosch-sensortec.com/media/boschsensortec/downloads/shuttle_board_flyer/bst-dhw-fl022.pdf
 
 ## How to install
 Copy all files of this project to the your Arduino IDE library folder.
